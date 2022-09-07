@@ -15,6 +15,7 @@ In another terminal, attach a shell (`docker exec -it {container_id} sh`) and ru
 - ```conda init zsh && source ~/.zshrc && conda activate ldm```
 
 Now you can run one of the scripts `txt2img.py` and `img2img.py`
+
 Scripts copied from https://github.com/CompVis/stable-diffusion and modified to run without cuda/gpu
 Check the source for the possible arguments.
 
