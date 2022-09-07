@@ -1,0 +1,5 @@
+# model file
+*.ckpt
+# test outputs
+data/output/*
+!.keepme
