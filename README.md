@@ -25,5 +25,5 @@ python custom/txt2img.py --prompt "A painting of a dragon flying over the moon" 
 ```
 
 ```bash
-python custom/img2img.py --init-img /test-data/test-sd2.jpg --prompt "Futuristic translucent basketball sneaker designed by yohji yamamoto, product photography, studio lighting" --ckpt sd-v1-4.ckpt --skip_grid --n_samples 1 --ddim_steps 100 --strength 0.25 --outdir /test-data/output --seed 1111
+python custom/img2img.py --init-img /test-data/test-sd2.jpg --prompt "Futuristic translucent basketball sneaker designed by yohji yamamoto, product photography, studio lighting" --ckpt sd-v1-4.ckpt --skip_grid --n_samples 1 --ddim_steps 50 --strength 0.75 --outdir /test-data/output --seed 1111
 ```
