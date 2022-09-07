@@ -2,7 +2,7 @@
 
 ## Build
 
-Clone this repository
+Clone this repository and work from the root directory
 
 Download the model
 - `curl https://drive.yerf.org/wl/\?id\=EBfTrmcCCUAGaQBXVIj5lJmEhjoP1tgl\&mode\=grid\&download\=1 --output sd-v1-4.ckpt`
