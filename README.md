@@ -1,4 +1,4 @@
-# Docker container with stable diffusion scripts
+# Docker container with stable diffusion scripts running with the CPU only
 
 ## Build
 
