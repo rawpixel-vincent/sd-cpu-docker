@@ -1,0 +1,37 @@
+name: ldm
+channels:
+  - pytorch
+  # - nvidia
+  - conda-forge
+dependencies:
+  - python=3.8.5
+  - pip=20.3
+  # - cudatoolkit=11.6
+  - pytorch
+  - torchvision
+  - cpuonly
+  - pytorch-lightning
+  - numpy=1.19.2
+  - pillow=6.2.1
+  - opencv
+  - libopencv
+  - py-opencv
+  - pip:
+      - opencv-python
+      - albumentations==0.4.3
+      - diffusers
+      - pudb==2019.2
+      - invisible-watermark
+      - imageio==2.9.0
+      - imageio-ffmpeg==0.4.2
+      - omegaconf==2.1.1
+      - test-tube>=0.7.5
+      - streamlit>=0.73.1
+      - einops==0.3.0
+      - transformers
+      - torch-fidelity
+      - torchmetrics
+      - kornia
+      - -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
+      - -e git+https://github.com/openai/CLIP.git@main#egg=clip
+      - -e .
