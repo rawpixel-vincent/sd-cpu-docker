@@ -5,9 +5,11 @@
 Download the model
 - `curl https://drive.yerf.org/wl/\?id\=EBfTrmcCCUAGaQBXVIj5lJmEhjoP1tgl\&mode\=grid\&download\=1 --output sd-v1-4.ckpt`
 
+Build the container
 - ```docker build . -t rawpixel/sd``` (be patient)
 - ```docker run -v `pwd`/data:/test-data -i -t rawpixel/sd "tail -f /dev/null"```
-- In another terminal, attach a shell (`docker exec -it {container_id} sh`) and run the following command
+
+In another terminal, attach a shell (`docker exec -it {container_id} sh`) and run the following command
 - ```conda init zsh && source ~/.zshrc && conda activate ldm```
 
 Scripts copied from https://github.com/CompVis/stable-diffusion and modified to run without cuda/gpu
