@@ -2,6 +2,8 @@
 
 ## Build
 
+Clone this repository
+
 Download the model
 - `curl https://drive.yerf.org/wl/\?id\=EBfTrmcCCUAGaQBXVIj5lJmEhjoP1tgl\&mode\=grid\&download\=1 --output sd-v1-4.ckpt`
 
@@ -15,6 +17,8 @@ In another terminal, attach a shell (`docker exec -it {container_id} sh`) and ru
 Now you can run one of the scripts `txt2img.py` and `img2img.py`
 Scripts copied from https://github.com/CompVis/stable-diffusion and modified to run without cuda/gpu
 Check the source for the possible arguments.
+
+## Examples
 
 ```bash
 python custom/txt2img.py --prompt "A painting of a dragon flying over the moon" --plms --ckpt sd-v1-4.ckpt --skip_grid --n_samples 1 --ddim_steps 20 --outdir /test-data/output --seed 1111
