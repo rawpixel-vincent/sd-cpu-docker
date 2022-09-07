@@ -21,7 +21,7 @@ Check the source for the possible arguments.
 ## Examples
 
 ```bash
-python custom/txt2img.py --prompt "A painting of a dragon flying over the moon" --plms --ckpt sd-v1-4.ckpt --skip_grid --n_samples 1 --ddim_steps 20 --outdir /test-data/output --seed 1111
+python custom/txt2img.py --prompt "A painting of a dragon flying over the moon" --plms --ckpt sd-v1-4.ckpt --skip_grid --n_samples 1 --ddim_steps 40 --outdir /test-data/output --seed 1111
 ```
 
 ```bash
