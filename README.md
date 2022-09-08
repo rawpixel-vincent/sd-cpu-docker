@@ -10,6 +10,13 @@
 - `source venv/bin/activate`
 - `brew install Cmake protobuf rust`
 - `pip install -r requirements.txt`
+- done
+
+examples:
+
+```bash
+python scripts/txt2img.py --n_samples 1 --n_iter 1 --plms --ddim_steps 100 --prompt "new born baby kitten, painted by greg rutkowski makoto shinkai takashi takeuchi studio ghibli, akihiko yoshida" --seed 3243241
+```
 
 # Docker container to test stable diffusion scripts running with the CPU only
 
