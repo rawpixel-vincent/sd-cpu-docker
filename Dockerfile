@@ -14,8 +14,6 @@ RUN cd / && git clone https://github.com/CompVis/stable-diffusion.git sd \
   && cd sd/ && git fetch origin pull/56/head:cpuonly && git checkout cpuonly
 
 WORKDIR /sd
-# Copied from https://github.com/CompVis/stable-diffusion
-# with library version and channel updated.
 
 ENV USE_OPENMP 1
 ENV OMP_NUM_THREADS 1
@@ -24,8 +22,6 @@ ENV OMP_NUM_THREADS 1
 RUN pip uninstall torch torchvision -y
 COPY environment.yaml /sd/environment.yaml
 RUN conda env create --file environment.yaml
-
-COPY sd-v1-4.ckpt /sd/sd-v1-4.ckpt
 
 COPY custom/ /sd/custom
 
